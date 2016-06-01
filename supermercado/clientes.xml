@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_60" class="java.beans.XMLDecoder">
+ <object class="modelo.ListaClientes" id="ListaClientes0">
+  <void property="lista">
+   <void method="add">
+    <object class="modelo.Cliente">
+     <void property="apellidos">
+      <string>munne duran</string>
+     </void>
+     <void property="direccion">
+      <string>calle de jaume</string>
+     </void>
+     <void property="nif">
+      <string>123456789</string>
+     </void>
+     <void property="nombre">
+      <string>jaume</string>
+     </void>
+     <void property="poblacion">
+      <string>Barcelona</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="modelo.Cliente">
+     <void property="apellidos">
+      <string>perez galdos</string>
+     </void>
+     <void property="direccion">
+      <string>calle de benito</string>
+     </void>
+     <void property="nif">
+      <string>111122222</string>
+     </void>
+     <void property="nombre">
+      <string>benito</string>
+     </void>
+     <void property="poblacion">
+      <string>Tarragona</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="modelo.Cliente">
+     <void property="apellidos">
+      <string>marin cusa</string>
+     </void>
+     <void property="direccion">
+      <string>calle de pedro</string>
+     </void>
+     <void property="nif">
+      <string>333333333</string>
+     </void>
+     <void property="nombre">
+      <string>pedro</string>
+     </void>
+     <void property="poblacion">
+      <string>Madrid</string>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>

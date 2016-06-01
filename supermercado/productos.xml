@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_60" class="java.beans.XMLDecoder">
+ <object class="modelo.ListaProductos" id="ListaProductos0">
+  <void property="lista">
+   <void method="add">
+    <object class="modelo.Producto">
+     <void property="codigo">
+      <int>120</int>
+     </void>
+     <void property="descripcion">
+      <string>pepe cola</string>
+     </void>
+     <void property="pvp">
+      <double>4.0</double>
+     </void>
+     <void property="stock">
+      <int>2</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="modelo.Producto">
+     <void property="codigo">
+      <int>130</int>
+     </void>
+     <void property="descripcion">
+      <string>naranja</string>
+     </void>
+     <void property="pvp">
+      <double>2.3</double>
+     </void>
+     <void property="stock">
+      <int>3</int>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>
