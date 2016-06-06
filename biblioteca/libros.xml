@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_80" class="java.beans.XMLDecoder">
+ <object class="biblioteca.ListaLibros" id="ListaLibros0">
+  <void property="lista">
+   <void method="add">
+    <object class="biblioteca.Libro">
+     <void property="autor">
+      <string>1111</string>
+     </void>
+     <void property="codi">
+      <string>11</string>
+     </void>
+     <void property="genero">
+      <string>11111</string>
+     </void>
+     <void property="numPag">
+      <int>120</int>
+     </void>
+     <void property="precio">
+      <double>12.34</double>
+     </void>
+     <void property="titulo">
+      <string>111</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="biblioteca.Libro">
+     <void property="autor">
+      <string>2222</string>
+     </void>
+     <void property="codi">
+      <string>22</string>
+     </void>
+     <void property="genero">
+      <string>22222</string>
+     </void>
+     <void property="numPag">
+      <int>130</int>
+     </void>
+     <void property="precio">
+      <double>12.35</double>
+     </void>
+     <void property="titulo">
+      <string>222</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="biblioteca.Libro">
+     <void property="autor">
+      <string>3333</string>
+     </void>
+     <void property="codi">
+      <string>33</string>
+     </void>
+     <void property="enPrestamo">
+      <boolean>true</boolean>
+     </void>
+     <void property="genero">
+      <string>11111</string>
+     </void>
+     <void property="numPag">
+      <int>140</int>
+     </void>
+     <void property="precio">
+      <double>12.36</double>
+     </void>
+     <void property="titulo">
+      <string>333</string>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>
