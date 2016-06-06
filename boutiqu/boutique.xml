@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_80" class="java.beans.XMLDecoder">
+ <object class="boutique.ListaPrendas" id="ListaPrendas0">
+  <void property="lista">
+   <void method="add">
+    <object class="boutique.Prendas">
+     <void property="codigo">
+      <string>111</string>
+     </void>
+     <void property="color">
+      <string>amarillo</string>
+     </void>
+     <void property="descripcion">
+      <string>pantalon</string>
+     </void>
+     <void property="precioCoste">
+      <double>4.25</double>
+     </void>
+     <void property="precioVenta">
+      <double>8.26</double>
+     </void>
+     <void property="talla">
+      <string>M</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="boutique.Prendas">
+     <void property="codigo">
+      <string>222</string>
+     </void>
+     <void property="color">
+      <string>azul</string>
+     </void>
+     <void property="descripcion">
+      <string>camiseta</string>
+     </void>
+     <void property="precioCoste">
+      <double>2.67</double>
+     </void>
+     <void property="precioVenta">
+      <double>4.68</double>
+     </void>
+     <void property="talla">
+      <string>S</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="boutique.Prendas">
+     <void property="codigo">
+      <string>333</string>
+     </void>
+     <void property="color">
+      <string>blanco</string>
+     </void>
+     <void property="descripcion">
+      <string>camisa</string>
+     </void>
+     <void property="precioCoste">
+      <double>3.47</double>
+     </void>
+     <void property="precioVenta">
+      <double>6.48</double>
+     </void>
+     <void property="stock">
+      <int>1</int>
+     </void>
+     <void property="talla">
+      <string>XL</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="boutique.Prendas">
+     <void property="codigo">
+      <string>444</string>
+     </void>
+     <void property="color">
+      <string>negro</string>
+     </void>
+     <void property="descripcion">
+      <string>falda</string>
+     </void>
+     <void property="precioCoste">
+      <double>8.12</double>
+     </void>
+     <void property="precioVenta">
+      <double>16.13</double>
+     </void>
+     <void property="talla">
+      <string>L</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="boutique.Prendas">
+     <void property="codigo">
+      <string>666</string>
+     </void>
+     <void property="color">
+      <string>blanco</string>
+     </void>
+     <void property="descripcion">
+      <string>pantalon corto</string>
+     </void>
+     <void property="precioCoste">
+      <double>8.13</double>
+     </void>
+     <void property="precioVenta">
+      <double>16.14</double>
+     </void>
+     <void property="stock">
+      <int>1</int>
+     </void>
+     <void property="talla">
+      <string>M</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="boutique.Prendas">
+     <void property="codigo">
+      <string>555</string>
+     </void>
+     <void property="color">
+      <string>blanco</string>
+     </void>
+     <void property="descripcion">
+      <string>vestido</string>
+     </void>
+     <void property="precioCoste">
+      <double>14.14</double>
+     </void>
+     <void property="precioVenta">
+      <double>28.15</double>
+     </void>
+     <void property="talla">
+      <string>XS</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="boutique.Prendas">
+     <void property="codigo">
+      <string>777</string>
+     </void>
+     <void property="color">
+      <string>rojo</string>
+     </void>
+     <void property="descripcion">
+      <string>falda</string>
+     </void>
+     <void property="precioCoste">
+      <double>11.68</double>
+     </void>
+     <void property="precioVenta">
+      <double>22.69</double>
+     </void>
+     <void property="stock">
+      <int>1</int>
+     </void>
+     <void property="talla">
+      <string>S</string>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>
