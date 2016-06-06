@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_60" class="java.beans.XMLDecoder">
+ <object class="bancocastor.ListaCuenta" id="ListaCuenta0">
+  <void property="lista">
+   <void method="add">
+    <object class="bancocastor.Cuenta">
+     <void property="comision">
+      <double>0.05</double>
+     </void>
+     <void property="numero">
+      <int>11</int>
+     </void>
+     <void property="personal">
+      <boolean>true</boolean>
+     </void>
+     <void property="saldo">
+      <double>100.0</double>
+     </void>
+     <void property="titular">
+      <string>1111</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="bancocastor.Cuenta">
+     <void property="comision">
+      <double>0.02</double>
+     </void>
+     <void property="numero">
+      <int>22</int>
+     </void>
+     <void property="saldo">
+      <double>200.0</double>
+     </void>
+     <void property="titular">
+      <string>2222</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="bancocastor.Cuenta">
+     <void property="comision">
+      <double>0.05</double>
+     </void>
+     <void property="numero">
+      <int>33</int>
+     </void>
+     <void property="personal">
+      <boolean>true</boolean>
+     </void>
+     <void property="saldo">
+      <double>300.0</double>
+     </void>
+     <void property="titular">
+      <string>3333</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="bancocastor.Cuenta">
+     <void property="comision">
+      <double>0.02</double>
+     </void>
+     <void property="numero">
+      <int>44</int>
+     </void>
+     <void property="saldo">
+      <double>400.0</double>
+     </void>
+     <void property="titular">
+      <string>4444</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="bancocastor.Cuenta">
+     <void property="comision">
+      <double>0.02</double>
+     </void>
+     <void property="numero">
+      <int>55</int>
+     </void>
+     <void property="saldo">
+      <double>500.0</double>
+     </void>
+     <void property="titular">
+      <string>Jaume Munne Duran</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="bancocastor.Cuenta">
+     <void property="comision">
+      <double>0.05</double>
+     </void>
+     <void property="numero">
+      <int>66</int>
+     </void>
+     <void property="personal">
+      <boolean>true</boolean>
+     </void>
+     <void property="saldo">
+      <double>600.0</double>
+     </void>
+     <void property="titular">
+      <string>4444</string>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>
