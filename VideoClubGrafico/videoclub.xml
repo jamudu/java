@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_80" class="java.beans.XMLDecoder">
+ <object class="videoclubfichero.ListaPeliculas" id="ListaPeliculas0">
+  <void property="lista">
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>001</string>
+     </void>
+     <void property="duracion">
+      <int>1</int>
+     </void>
+     <void property="genero">
+      <string>Terror</string>
+     </void>
+     <void property="titulo">
+      <string>el hombre que </string>
+     </void>
+     <void property="valoracion">
+      <int>6</int>
+     </void>
+     <void property="visto">
+      <boolean>true</boolean>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>12</string>
+     </void>
+     <void property="duracion">
+      <int>120</int>
+     </void>
+     <void property="genero">
+      <string>Drama</string>
+     </void>
+     <void property="titulo">
+      <string>lo que el viento</string>
+     </void>
+     <void property="valoracion">
+      <int>4</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>13</string>
+     </void>
+     <void property="duracion">
+      <int>175</int>
+     </void>
+     <void property="genero">
+      <string>Fantastico</string>
+     </void>
+     <void property="titulo">
+      <string>el hobbit</string>
+     </void>
+     <void property="valoracion">
+      <int>9</int>
+     </void>
+     <void property="visto">
+      <boolean>true</boolean>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>1234</string>
+     </void>
+     <void property="duracion">
+      <int>210</int>
+     </void>
+     <void property="genero">
+      <string>Aventura</string>
+     </void>
+     <void property="titulo">
+      <string>el señor de los anillos</string>
+     </void>
+     <void property="valoracion">
+      <int>8</int>
+     </void>
+     <void property="visto">
+      <boolean>true</boolean>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>2345</string>
+     </void>
+     <void property="duracion">
+      <int>85</int>
+     </void>
+     <void property="genero">
+      <string>Accion</string>
+     </void>
+     <void property="titulo">
+      <string>hora punta 2</string>
+     </void>
+     <void property="valoracion">
+      <int>7</int>
+     </void>
+     <void property="visto">
+      <boolean>true</boolean>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>4567</string>
+     </void>
+     <void property="duracion">
+      <int>93</int>
+     </void>
+     <void property="genero">
+      <string>Terror</string>
+     </void>
+     <void property="titulo">
+      <string>la mosca</string>
+     </void>
+     <void property="valoracion">
+      <int>6</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>6789</string>
+     </void>
+     <void property="duracion">
+      <int>80</int>
+     </void>
+     <void property="genero">
+      <string>Accion</string>
+     </void>
+     <void property="titulo">
+      <string>la momia</string>
+     </void>
+     <void property="valoracion">
+      <int>7</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>7890</string>
+     </void>
+     <void property="duracion">
+      <int>87</int>
+     </void>
+     <void property="genero">
+      <string>Terror</string>
+     </void>
+     <void property="titulo">
+      <string>resident evil 2</string>
+     </void>
+     <void property="valoracion">
+      <int>4</int>
+     </void>
+     <void property="visto">
+      <boolean>true</boolean>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>1111</string>
+     </void>
+     <void property="duracion">
+      <int>160</int>
+     </void>
+     <void property="genero">
+      <string>Romantica</string>
+     </void>
+     <void property="titulo">
+      <string>titanic</string>
+     </void>
+     <void property="valoracion">
+      <int>7</int>
+     </void>
+     <void property="visto">
+      <boolean>true</boolean>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>2222</string>
+     </void>
+     <void property="duracion">
+      <int>103</int>
+     </void>
+     <void property="genero">
+      <string>Comedia</string>
+     </void>
+     <void property="titulo">
+      <string>los padres de ella</string>
+     </void>
+     <void property="valoracion">
+      <int>7</int>
+     </void>
+     <void property="visto">
+      <boolean>true</boolean>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>3333</string>
+     </void>
+     <void property="genero">
+      <string>Drama</string>
+     </void>
+     <void property="titulo">
+      <string>la vida es vella</string>
+     </void>
+     <void property="valoracion">
+      <int>8</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>002</string>
+     </void>
+     <void property="duracion">
+      <int>110</int>
+     </void>
+     <void property="genero">
+      <string>Accion</string>
+     </void>
+     <void property="titulo">
+      <string>el increible hulk</string>
+     </void>
+     <void property="valoracion">
+      <int>6</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>003</string>
+     </void>
+     <void property="duracion">
+      <int>100</int>
+     </void>
+     <void property="genero">
+      <string>Ciencia Ficcion</string>
+     </void>
+     <void property="titulo">
+      <string>gattaka</string>
+     </void>
+     <void property="valoracion">
+      <int>8</int>
+     </void>
+     <void property="visto">
+      <boolean>true</boolean>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>005</string>
+     </void>
+     <void property="duracion">
+      <int>120</int>
+     </void>
+     <void property="genero">
+      <string>Accion</string>
+     </void>
+     <void property="titulo">
+      <string>indiana jones y el templo maldito</string>
+     </void>
+     <void property="valoracion">
+      <int>8</int>
+     </void>
+     <void property="visto">
+      <boolean>true</boolean>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>006</string>
+     </void>
+     <void property="duracion">
+      <int>80</int>
+     </void>
+     <void property="genero">
+      <string>Gore</string>
+     </void>
+     <void property="titulo">
+      <string>tu madre se ha comido mi perro</string>
+     </void>
+     <void property="valoracion">
+      <int>4</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>007</string>
+     </void>
+     <void property="duracion">
+      <int>93</int>
+     </void>
+     <void property="genero">
+      <string>Comedia</string>
+     </void>
+     <void property="titulo">
+      <string>hijos de un dios salvaje</string>
+     </void>
+     <void property="valoracion">
+      <int>7</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>008</string>
+     </void>
+     <void property="duracion">
+      <int>115</int>
+     </void>
+     <void property="genero">
+      <string>Terror</string>
+     </void>
+     <void property="titulo">
+      <string>el exorcista</string>
+     </void>
+     <void property="valoracion">
+      <int>8</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>009</string>
+     </void>
+     <void property="duracion">
+      <int>95</int>
+     </void>
+     <void property="genero">
+      <string>Comedia</string>
+     </void>
+     <void property="titulo">
+      <string>american pie</string>
+     </void>
+     <void property="valoracion">
+      <int>2</int>
+     </void>
+     <void property="visto">
+      <boolean>true</boolean>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>010</string>
+     </void>
+     <void property="duracion">
+      <int>110</int>
+     </void>
+     <void property="genero">
+      <string>Drama</string>
+     </void>
+     <void property="titulo">
+      <string>el lobo de wall street</string>
+     </void>
+     <void property="valoracion">
+      <int>1</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>55</string>
+     </void>
+     <void property="duracion">
+      <int>92</int>
+     </void>
+     <void property="genero">
+      <string>Terror</string>
+     </void>
+     <void property="titulo">
+      <string>la celda</string>
+     </void>
+     <void property="valoracion">
+      <int>6</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>77</string>
+     </void>
+     <void property="duracion">
+      <int>100</int>
+     </void>
+     <void property="genero">
+      <string>Terror</string>
+     </void>
+     <void property="titulo">
+      <string>la cosa</string>
+     </void>
+     <void property="valoracion">
+      <int>10</int>
+     </void>
+     <void property="visto">
+      <boolean>true</boolean>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>

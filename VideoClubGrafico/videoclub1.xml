@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_80" class="java.beans.XMLDecoder">
+ <object class="videoclubfichero.ListaPeliculas" id="ListaPeliculas0">
+  <void property="lista">
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>001</string>
+     </void>
+     <void property="duracion">
+      <int>1</int>
+     </void>
+     <void property="genero">
+      <string>terror</string>
+     </void>
+     <void property="titulo">
+      <string>el hombre que </string>
+     </void>
+     <void property="valoracion">
+      <int>6</int>
+     </void>
+     <void property="visto">
+      <boolean>true</boolean>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>12</string>
+     </void>
+     <void property="duracion">
+      <int>120</int>
+     </void>
+     <void property="genero">
+      <string>drama</string>
+     </void>
+     <void property="titulo">
+      <string>lo que el viento</string>
+     </void>
+     <void property="valoracion">
+      <int>4</int>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>13</string>
+     </void>
+     <void property="duracion">
+      <int>175</int>
+     </void>
+     <void property="genero">
+      <string>fantastico</string>
+     </void>
+     <void property="titulo">
+      <string>el hobbit</string>
+     </void>
+     <void property="valoracion">
+      <int>9</int>
+     </void>
+     <void property="visto">
+      <boolean>true</boolean>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="videoclubfichero.Pelicula">
+     <void property="codigo">
+      <string>004</string>
+     </void>
+     <void property="genero">
+      <string>Drama</string>
+     </void>
+     <void property="titulo">
+      <string>perror callejeros</string>
+     </void>
+     <void property="valoracion">
+      <int>5</int>
+     </void>
+     <void property="visto">
+      <boolean>true</boolean>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>
