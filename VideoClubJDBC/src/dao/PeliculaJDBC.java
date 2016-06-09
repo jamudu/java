@@ -5,9 +5,12 @@ package dao;
 import com.mysql.jdbc.PreparedStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import modelo.ListaPelicula;
 import modelo.Pelicula;
 
 /**
@@ -17,11 +20,68 @@ import modelo.Pelicula;
 public class PeliculaJDBC {   
     private Connection conexion;
     
+    public ListaPelicula selectAllpeliculas(){
+        ListaPelicula ListaPeliculas=new ListaPelicula();
+        conectar();
+        if (conexion !=null){
+            try {
+                String query ="select * from pelicula";
+                Statement st=conexion.createStatement();
+                ResultSet rs=st.executeQuery(query);
+                while (rs.next()){
+                    Pelicula pe=new Pelicula();
+                    pe.setCodigo(rs.getString("codigo"));  // =  rs.getString(1)
+                    pe.setTitulo(rs.getString("titulo"));
+                    pe.setDuracion(rs.getInt("duracion"));
+                    pe.setGenero(rs.getString("genero"));
+                    pe.setValoracion(rs.getInt("valoracion"));
+                    pe.setVisto(rs.getBoolean("visto"));
+                    ListaPeliculas.altaPelicula(pe);
+                }
+                rs.close();
+                st.close();
+            } catch (SQLException ex) {
+                //Logger.getLogger(PeliculaJDBC.class.getName()).log(Level.SEVERE, null, ex);
+                System.out.println("Error en la consulta "+ex.getMessage());
+            }finally{
+                desconectar();
+            }
+        }
+        return ListaPeliculas;
+    }
+    
+    //funcion que comprueba si una pelicula existe, no recogemos el resultado de la busqueda
+    public boolean existePelicula(String codigo){
+        conectar();
+        if (conexion !=null){
+            try {
+                String query = "select *from pelicula where codigo='" + codigo + "'";
+                Statement st=conexion.createStatement();
+                ResultSet rs=st.executeQuery(query);
+                //si ResultSet tiene algo (si tiene next)
+                boolean existe=false;
+                if (rs.next()){
+                    existe= true;
+                }
+                rs.close();
+                st.close();
+                return existe;
+            } catch (SQLException ex) {
+                //Logger.getLogger(PeliculaJDBC.class.getName()).log(Level.SEVERE, null, ex);
+                System.out.println("Error al consultar"+ex.getMessage());
+                return false;
+            }finally {
+                desconectar();
+            }
+        }else{
+            return false;
+        }
+    }
+    
     //funcion insertar pelicula
     public boolean insertarPelicula(Pelicula p){
         conectar();
         if (conexion != null){
-            boolean ok = false;
             try {
                 String insertar = "insert into pelicula values (?, ?, ?, ?, ?, ?)";
                 PreparedStatement ps = (PreparedStatement) conexion.prepareStatement(insertar);
@@ -33,15 +93,14 @@ public class PeliculaJDBC {
                 ps.setBoolean(6, p.isVisto());
                 ps.executeUpdate();     //ejecuta la consulta
                 ps.close();             //liberamos recursos
-                ok = true;
+                return true;
             } catch (SQLException ex) {
                 //Logger.getLogger(PeliculaJDBC.class.getName()).log(Level.SEVERE, null, ex);
                 System.out.println("Error al insertar: " +ex.getMessage());
-                ok = false;
+                return false;
             }finally{
                 desconectar();
             }
-            return ok;
         }else{
             return false;
         }
@@ -53,7 +112,7 @@ public class PeliculaJDBC {
             String url = "jdbc:mysql://localhost:3306/videoclub";
             String user="root";
             String password = "jeveris";
-            Connection con = DriverManager.getConnection(url, user, password);
+            conexion = DriverManager.getConnection(url, user, password);
         } catch (SQLException ex) {
             //Logger.getLogger(PeliculaJDBC.class.getName()).log(Level.SEVERE, null, ex);
             System.out.println("Error al conectar" + ex.getMessage());

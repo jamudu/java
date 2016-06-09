@@ -2,6 +2,7 @@
 
 package vista;
 
+import dao.PeliculaJDBC;
 import javax.swing.JOptionPane;
 import modelo.Pelicula;
 
@@ -20,12 +21,13 @@ public class DatosPelicula extends javax.swing.JDialog {
     public void setPelicula(Pelicula pelicula) {
         this.pelicula = pelicula;
     }
-
+    private PeliculaJDBC peliculaJDBC;
     /**
      * Creates new form DatosPelicula
      */
     public DatosPelicula(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
+        peliculaJDBC = new PeliculaJDBC();
         pelicula=new Pelicula();
         initComponents();
     }
@@ -183,6 +185,12 @@ public class DatosPelicula extends javax.swing.JDialog {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         if (comprobarCampos()){
             
+            if (peliculaJDBC.insertarPelicula(pelicula)){
+                JOptionPane.showMessageDialog(this, "Pelicula dada de alta");
+                dispose();
+            }else{
+                JOptionPane.showMessageDialog(this, "No se ha podido insertar la pelicula", "ERROR. pelicula no dada de alta", JOptionPane.ERROR_MESSAGE);
+            }
         }
     }//GEN-LAST:event_jButton2ActionPerformed
     private boolean comprobarCampos(){
@@ -194,7 +202,10 @@ public class DatosPelicula extends javax.swing.JDialog {
             JOptionPane.showMessageDialog(this, "El codigo debe tener 8 caracteres", "ERROR: longitud incorrecta", JOptionPane.ERROR_MESSAGE);
             return false;
         }
-        
+        if (peliculaJDBC.existePelicula(jTextField1.getText())){
+            JOptionPane.showMessageDialog(this, "Ya existe una pelicula con ese codigo", "ERROR: codigo duplicado", JOptionPane.ERROR_MESSAGE);
+            return false;
+        }
         if (jTextField2.getText().isEmpty() || jTextField2.getText().length()>100){
             JOptionPane.showMessageDialog(this, "El titulo no puede estar en blanco ni tener mas de 100 caracteres", "ERROR: titulo incorrecto", JOptionPane.ERROR_MESSAGE);
             return false;
